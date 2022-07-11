@@ -27,7 +27,12 @@ pub struct Builder<T: Transport> {
 }
 
 impl<T: Transport> Builder<T> {
-    /// Number of confirmations required after code deployment.
+    /* Number of confirmations required after code deployment.
+       The required confirmations before the TransactionReceipt 
+       is processed. If none is given, defaults to 1 confirmation. 
+       If 0 is given, immediately returns a pending TransactionReceipt, 
+       while waiting for a confirmation in a separate thread.
+    */ 
     pub fn confirmations(mut self, confirmations: usize) -> Self {
         self.confirmations = confirmations;
         self
@@ -59,6 +64,8 @@ impl<T: Transport> Builder<T> {
             confirm::send_transaction_with_confirmation(transport, tx, poll_interval, confirmations)
         })
         .await
+
+
     }
     /// Execute deployment passing code and constructor parameters.
     ///

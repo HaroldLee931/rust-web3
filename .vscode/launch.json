@@ -1,0 +1,471 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'web3'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=web3"
+                ],
+                "filter": {
+                    "name": "web3",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'contract_log_filter'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=contract_log_filter",
+                    "--package=web3"
+                ],
+                "filter": {
+                    "name": "contract_log_filter",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'contract_log_filter'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=contract_log_filter",
+                    "--package=web3"
+                ],
+                "filter": {
+                    "name": "contract_log_filter",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'contract_log_pubsub'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=contract_log_pubsub",
+                    "--package=web3"
+                ],
+                "filter": {
+                    "name": "contract_log_pubsub",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'contract_log_pubsub'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=contract_log_pubsub",
+                    "--package=web3"
+                ],
+                "filter": {
+                    "name": "contract_log_pubsub",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'transport_http'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=transport_http",
+                    "--package=web3"
+                ],
+                "filter": {
+                    "name": "transport_http",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'transport_http'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=transport_http",
+                    "--package=web3"
+                ],
+                "filter": {
+                    "name": "transport_http",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'contract_storage'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=contract_storage",
+                    "--package=web3"
+                ],
+                "filter": {
+                    "name": "contract_storage",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'contract_storage'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=contract_storage",
+                    "--package=web3"
+                ],
+                "filter": {
+                    "name": "contract_storage",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'transaction_public'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=transaction_public",
+                    "--package=web3"
+                ],
+                "filter": {
+                    "name": "transaction_public",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'transaction_public'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=transaction_public",
+                    "--package=web3"
+                ],
+                "filter": {
+                    "name": "transaction_public",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'transport_batch'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=transport_batch",
+                    "--package=web3"
+                ],
+                "filter": {
+                    "name": "transport_batch",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'transport_batch'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=transport_batch",
+                    "--package=web3"
+                ],
+                "filter": {
+                    "name": "transport_batch",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'transaction_private'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=transaction_private",
+                    "--package=web3"
+                ],
+                "filter": {
+                    "name": "transaction_private",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'transaction_private'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=transaction_private",
+                    "--package=web3"
+                ],
+                "filter": {
+                    "name": "transaction_private",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'contract'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=contract",
+                    "--package=web3"
+                ],
+                "filter": {
+                    "name": "contract",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'contract'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=contract",
+                    "--package=web3"
+                ],
+                "filter": {
+                    "name": "contract",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'transport_either'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=transport_either",
+                    "--package=web3"
+                ],
+                "filter": {
+                    "name": "transport_either",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'transport_either'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=transport_either",
+                    "--package=web3"
+                ],
+                "filter": {
+                    "name": "transport_either",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'pubsub'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=pubsub",
+                    "--package=web3"
+                ],
+                "filter": {
+                    "name": "pubsub",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'pubsub'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=pubsub",
+                    "--package=web3"
+                ],
+                "filter": {
+                    "name": "pubsub",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'transport_ws'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=transport_ws",
+                    "--package=web3"
+                ],
+                "filter": {
+                    "name": "transport_ws",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'transport_ws'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=transport_ws",
+                    "--package=web3"
+                ],
+                "filter": {
+                    "name": "transport_ws",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'bench'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=bench",
+                    "--package=web3"
+                ],
+                "filter": {
+                    "name": "bench",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'bench'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=bench",
+                    "--package=web3"
+                ],
+                "filter": {
+                    "name": "bench",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
